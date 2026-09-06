@@ -1,0 +1,66 @@
+body{
+    font-family: "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0px;
+    background-color: #EEF0FE;
+    padding: 30px;
+}
+
+.cabecalho {
+    margin: 0px;
+    background-color: #7000EA;
+    border:3px solid #3730a3;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.cabecalho h1 {
+    margin: 10px;
+}
+
+.conteudo {
+    margin-top: 25px;
+    border: 2px solid #c7d2fe;
+    padding: 25px;
+
+}
+
+.sobre {
+    background-color: #F6F0FC;
+    margin: 0px;
+    border: 2px solid #818cf8;
+    padding: 20px;
+}
+
+.destaque {
+    color: #CB2057;
+}
+
+h2 {
+    color:#7F25C3;
+}
+
+.habilidades {
+    background-color: #FDF3FE;
+    margin-top: 25px;
+    border: 2px solid #a78bfa;
+    padding: 20px;
+}
+
+.habilidades span {
+    display: inline-block;
+    background-color: #9A02F9;
+    margin: 5px;
+    border: 2px solid #5b21b6;
+    padding: 8px;
+    color: white;
+}
+
+.rodape {
+    background-color: #26014E;
+    margin-top: 25px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
