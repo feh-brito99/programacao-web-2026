@@ -1,0 +1,288 @@
+/* CONFIGURAÇÕES GERAIS E ESTRUTURA DA PÁGINA */
+body {
+    background-color:black;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+/* SEÇÃO DO CABEÇALHO (LOGO, BOAS-VINDAS E IMAGEM PRINCIPAL) */
+/*CABEÇALHO*/
+.cabecalho {
+    border-bottom: 3px solid #C02334;
+    background: linear-gradient(180deg, #18181b 0%, #000000 100%);
+    padding: 30px 40px;
+    border-radius: 0 0 16px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+#logo-cabecalho {
+    max-width: 260px;
+    height: auto;
+}
+
+.boas-vindas {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+#chamada {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #a1a1aa;
+    margin: 0 0 6px 0;
+}
+
+#bem-vindo {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 6px 14px;
+    margin: 0;
+}
+
+.img-cabecalho {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#foto-cabecalho {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* BLOCO DO VÍDEO EM DESTAQUE */
+.video-destaque {
+    margin: 10px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* SEÇÃO SOBRE O GRUPO E CONTAINER GRID/FLEX */
+.sobre {
+    margin: 10px;
+    padding: 40px;
+    border: 3px solid #C02334;
+    border-radius: 8px;
+}
+.grid-sobre {
+    display: flex;          
+    flex-direction: row;  
+    gap: 20px;            
+    margin-top: 20px; 
+}
+
+#sobre-img {
+    border-radius: 8px;
+}
+
+/* CARDS INTERATIVOS DOS INTEGRANTES E MENU DE ABAS */
+.membros {
+    margin: 10px;
+    padding: 25px;
+}
+
+.card-membro {
+    display: flex;
+    padding: 0;
+    align-items: stretch;
+    overflow: hidden;
+    border: 3px solid #C02334;
+    border-radius: 0 8px 8px 8px;
+    background-color: #C02334;
+}
+
+.menu-membros {
+    display: flex;
+    z-index: 2;
+}
+
+.btn-membro {
+    background-color:black;
+    color:#EDEDED;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #3f3f46;   
+    border-bottom: none; 
+    padding: 9px;
+}
+
+.btn-membro:hover {
+    color: #ffffff;            
+    background-color: #27272a; 
+}
+
+.btn-membro.ativo {
+    background-color: #C02334;   
+    color: #ffffff;            
+    font-weight: bold;
+    border: 3px solid #C02334; 
+}
+
+.card-img {
+    width: 300px;              
+    min-width: 300px;        
+    display: flex;          
+}
+
+#foto-membro {  
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;    
+    border-radius: 0 0 0 8px;   
+    display: block;
+}
+
+#nome-membro {
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 30px;
+}
+
+#ass-membro {
+    display: block;
+    margin-left: auto;         
+    margin-top: auto;         
+    padding-top: 15px;
+}
+.card-txt {
+    flex: 1;                  
+    padding: 30px;            
+    display: flex;
+    flex-direction: column;
+}
+
+/* APRESENTAÇÃO DAS UNITS E CARDS INDIVIDUAIS */
+.units {
+    margin: 10px;
+    padding: 25px;
+}
+
+.grid-units {
+    display: flex;          
+    flex-direction: row;  
+    gap: 20px;            
+    margin-top: 20px;      
+}
+
+.card-unit {
+    flex: 1;             
+    border-radius: 8px;   
+    padding: 16px;
+    background-color: #C02334;    
+}
+
+.foto-unit {
+  width: 100%;          
+  height: 180px;          
+  object-fit: cover; 
+  object-position: top center;      
+  border-radius: 6px;      
+  display: block;          
+  margin-bottom: 15px;    
+}
+
+.subtitulo {
+    font-size: 13px;
+    font-weight: 600;
+    color: #fee2e2;         
+    text-transform: uppercase;
+    letter-spacing: 1px;    
+    margin-top: 0;          
+    margin-bottom: 12px;
+}
+
+/* SEÇÃO DE MARCOS HISTÓRICOS */
+.marcos {
+    margin: 10px;
+    padding: 40px;
+    border: 3px solid #3f3f46;
+    border-radius: 8px; 
+}
+
+/* SEÇÃO DA ENQUETE DO BIAS E RESULTADO */
+.enquete {
+    margin: 10px;
+    padding: 25px;
+    background-color: #151515;
+    border-radius: 8px;
+    display: flex;
+}
+.opcoes-bias {
+    color: #EDEDED;
+    margin: 15px;
+}
+
+#btn-votar {
+    margin-top: 8px;
+}
+.resultado-enquete {  
+    flex:1;              
+    display: flex;          
+    justify-content: center; 
+    align-items: center; 
+}
+
+#foto-bias-resultado {
+    border-radius: 8px;
+    display: block;
+}
+
+/* ESTILIZAÇÃO DO BOTÃO DE VOTAÇÃO */
+#btn-votar {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  background-color: #C02334;
+  color: #ffffff;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: 2px solid #C02334;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  transition: all 0.25s ease-in-out;
+}
+
+#btn-votar:hover {
+  background-color: transparent;
+  color: #C02334;
+  box-shadow: 0 0 10px rgba(192, 35, 52, 0.4);
+}
+
+#btn-votar:active {
+  transform: scale(0.97);
+}
+
+/* SEÇÃO DE RODAPÉ */
+.rodape {
+    text-align: center;
+}
+
+/* FORMATAÇÃO PADRÃO DE TEXTOS E TÍTULOS */
+p {
+    color:#EDEDED;
+}
+h2 {
+    color: #C02334;
+}
+.lista-marcos {
+    color:#EDEDED;
+}

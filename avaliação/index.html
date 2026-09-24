@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stray Kids - Venha se tornar um(a) Baby-stay!</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+    
+<body>
+    <!-- CABEÇALHO COM LOGO, BOAS-VINDAS E IMAGEM PRINCIPAL -->
+    <header class="cabecalho">
+        <div class="logo">
+            <img 
+                id="logo-cabecalho" 
+                src="/imagens/logo-skz.png" 
+                alt="Logo do Stray Kids"
+                width="300">
+            <div class="boas-vindas">
+                <p id="chamada">Step Out! Este é o Stray Kids!</p>
+                <p id="bem-vindo">Bem-vindo(a), BABY-STAY!</p>
+            </div>
+        </div>
+        <div class="img-cabecalho">
+            <img 
+                id="foto-cabecalho" 
+                src="imagens/img-cabecalho.png" 
+                alt="Foto principal"
+                width="650">
+        </div>
+    </header>
+    
+    <!-- SEÇÃO DE VÍDEO DE DESTAQUE DO YOUTUBE -->
+    <div class="video-destaque">
+        <h2>Conheça o Som: O Hino "God's Menu"</h2>
+        <p>Antes de tudo: dê o play e entenda em 3 minutos por que o Stray Kids é um caminho sem volta:</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TQTlCHxyuu8?si=w7OmmrIp2knGUTlO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- SEÇÃO SOBRE A FORMAÇÃO E CONCEITO DO GRUPO -->
+    <div class="sobre">
+        <div class="grid-sobre">
+            <div class="sobre-txt">
+                <h2>Quem é o Stray Kids?</h2>
+                <p>O Stray Kids (스트레이 키즈) é um grupo sul-coreano de 8 integrantes: Bang Chan, Lee Know, Changbin, Hyunjin, Han, Felix, Seungmin e I.N. Ao contrário do modelo padrão das agências, o grupo foi montado a dedo pelo próprio líder, Bang Chan, a partir da sub-unit autoral de produtores 3RACHA (com Changbin e Han).</p>
+                <p>Em 2017, eles enfrentaram a própria JYP Entertainment no reality show homônimo de sobrevivência com uma missão inédita: estrear juntos como uma equipe unida e autossuficiente. Produzindo as próprias faixas e coreografias, superaram eliminações dramáticas e estrearam oficialmente em 2018.</p>
+                <p>Com uma sonoridade autoral batizada de "Mala Taste" — misturando batidas pesadas, hip-hop e melodias intensas —, o grupo quebrou recordes mundiais e domina os maiores estádios do planeta ao lado do fandom STAY, sob o lema: "Stray Kids everywhere all around the world".</p>
+            </div>
+            <div class="sobre-img">
+                <img
+                    id="sobre-img"
+                    src="imagens/img-sobre.png"
+                    width="300"
+                >
+            </div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO INTERATIVA DOS MEMBROS (MENU DE BOTÕES E CARD DINÂMICO) -->
+    <div class="membros">
+        <h2>Conheça cada membro!</h2>
+        <div class="menu-membros">
+            <button type="button" class="btn-membro" id="btn-chan">Bang Chan</button>
+            <button type="button" class="btn-membro" id="btn-leeknow">Lee Know</button>
+            <button type="button" class="btn-membro" id="btn-changbin">Changbin</button>
+            <button type="button" class="btn-membro" id="btn-hyunjin">Hyunjin</button>
+            <button type="button" class="btn-membro" id="btn-han">Han</button>
+            <button type="button" class="btn-membro" id="btn-felix">Felix</button>
+            <button type="button" class="btn-membro" id="btn-seungmin">Seungmin</button>
+            <button type="button" class="btn-membro" id="btn-in">I.N</button>
+        </div>
+
+        <div class="card-membro" id="card-membro">
+            <div class="card-img">
+                <img id="foto-membro" src="" alt="" width="300" >
+            </div>
+            <div class="card-txt">
+                <h3 id="nome-membro"></h3>
+                <p class="subtitulo" id="data-nascimento"></p>
+                <p id="posicao-membro"></p>
+                <p id="bio-membro"></p>
+                <img id="ass-membro" src="" alt="" width="150" >
+            </div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO DE APRESENTAÇÃO DAS SUB-UNITS -->
+    <div class="units">
+        <h2>As Units</h2>
+        <p>O grupo é dividido em três sub-grupos, cada um com suas especialidades:</p>
+        <div class="grid-units">
+            <div class="card-unit" id="3racha">
+                <img class="foto-unit" src="imagens/3racha.png" alt="3RACHA" width="200">
+                <h3>3RACHA</h3>
+                <p class="subtitulo">Produção & RAP</p>
+                <p>Composta por <strong>Bang Chan</strong>, <strong>Changbin</strong> e <strong>Han</strong>. Eles são os cérebros por trás da grande maioria das músicas, compondo batidas e letras autorais.</p>
+            </div>
+            <div class="card-unit" id="danceracha">
+                <img class="foto-unit" src="imagens/danceracha.png" alt="DanceRACHA" width="200">
+                <h3>DanceRACHA</h3>
+                <p class="subtitulo">Performance & Dança</p>
+                <p>Composta por <strong>Lee Know</strong>, <strong>Hyunjin</strong> e <strong>Felix</strong>. Responsáveis pela presença de palco avassaladora, coreografias marcantes e expressões artísticas.</p>
+            </div>
+            <div class="card-unit" id="vocalracha">
+                <img class="foto-unit" src="imagens/vocalracha.png" alt="VocalRACHA" width="200">
+                <h3>VocalRACHA</h3>
+                <p class="subtitulo">Vocais</p>
+                <p>Composta por <strong>Seungmin</strong> e <strong>I.N</strong>. Entregam as harmonias suaves, vocais e melodias marcantes que equilibram o som pesado do grupo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO DE MARCOS HISTÓRICOS E RECORDES -->
+    <div class="marcos">
+        <h2>Marcos Históricos</h2>
+        <p>Alguns recordes que mostram o impacto global do Stray Kids:</p>
+        <ul class="lista-marcos">
+            <li>
+            <strong>Primeiro Headliner de K-pop no Rock in Rio:</strong> 
+            Fizeram história absoluta no Brasil ao serem confirmados como atração principal (<em>Headliner</em>) do Palco Mundo do <em>Rock in Rio</em>, tornando-se o primeiro grupo de K-pop a liderar o maior festival de música do país.
+            </li>
+            <li>
+            <strong>Recorde Invicto e Histórico na Billboard 200:</strong> 
+            Primeiro grupo musical de toda a história do planeta a estrear seus primeiros <em>lançamentos consecutivos direto em #1</em> na principal parada dos EUA (com <em>ODDINARY</em>, <em>MAXIDENT</em>, <em>5-STAR</em>, <em>ROCK-STAR</em>, <em>ATE</em> e os álbuns mais recentes).
+            </li>
+            <li>
+            <strong>Domínio Global dos Maiores Festivais:</strong> 
+            Primeiro grupo masculino de K-pop a liderar os palcos ocidentais mais massivos do mundo, incluindo <em>Lollapalooza Chicago</em>, <em>BST Hyde Park</em> (Londres) e <em>I-Days Milano</em>.
+            </li>
+            <li>
+            <strong>Trilha Sonora Oficial da Marvel em Hollywood:</strong> 
+            Composição e interpretação da faixa exclusiva <em>"Slash"</em> para a trilha sonora oficial do blockbuster mundial <em>Deadpool & Wolverine</em>.
+            </li>
+            <li>
+            <strong>Presença Completa no Met Gala de Nova York:</strong> 
+            Primeiro grupo da história do K-pop em que todos os oito membros cruzaram juntos o tapete vermelho do <em>Met Gala</em> como embaixadores globais da grife Tommy Hilfiger.
+            </li>
+            <li>
+            <strong>Produção Autoral & Renovação Histórica:</strong> 
+            Liderados pela sub-unit <em>3RACHA</em> (Bang Chan, Changbin e Han), o grupo tem discografia quase 100% autoral registrada na KOMCA e consolidou sua união com a renovação antecipada do contrato de todos os 8 integrantes.
+            </li>
+        </ul>
+    </div>
+
+    <!-- SEÇÃO DA ENQUETE DO BIAS (FORMULÁRIO DE VOTAÇÃO E RESULTADO) -->
+    <div class="enquete">
+        <div class="opcoes-bias">
+            <h2>Quem é o seu Bias?</h2>
+            <p>Vote no seu integrante favorito do Stray Kids:</p>
+            <div>
+                <input type="radio" id="bias-chan" name="bias" value="Bang Chan">
+                <label for="bias-chan">Bang Chan 🐺</label>
+            </div>
+
+            <div>
+                <input type="radio" id="bias-leeknow" name="bias" value="Lee Know">
+                <label for="bias-leeknow">Lee Know 🐰</label>
+            </div>
+
+            <div>
+                <input type="radio" id="bias-changbin" name="bias" value="Changbin">
+                <label for="bias-changbin">Changbin 🐖🐇</label>
+            </div>
+
+            <div>
+                <input type="radio" id="bias-hyunjin" name="bias" value="Hyunjin">
+                <label for="bias-hyunjin">Hyunjin 🥟</label>
+            </div>
+
+            <div>
+                <input type="radio" id="bias-han" name="bias" value="Han">
+                <label for="bias-han">Han 🐿️</label>
+            </div>
+
+            <div>
+                <input type="radio" id="bias-felix" name="bias" value="Felix">
+                <label for="bias-felix">Felix 🐥</label>
+            </div>
+
+            <div>
+                <input type="radio" id="bias-seungmin" name="bias" value="Seungmin">
+                <label for="bias-seungmin">Seungmin 🐶</label>
+            </div>
+
+            <div>
+                <input type="radio" id="bias-in" name="bias" value="I.N">
+                <label for="bias-in">I.N 🦊</label>
+            </div>
+            <button type="button" id="btn-votar">Registrar Meu Voto</button>
+            <p id="mensagem-enquete"></p>
+        </div>
+        
+        <div class="resultado-enquete">
+            <img
+                id="foto-bias-resultado"
+                class="img-resultado"
+                src="imagens/enquete.png"
+                alt="Stray Kids"
+                width="700"
+            >
+        </div>
+    </div>
+
+    <!-- RODAPÉ COM CRÉDITOS -->
+    <footer class="rodape">
+        <p>© 2026 Stray Kids • Feito por Fernanda Brito • BSI 2024</p>
+        <p>Projeto acadêmico para fins de estudo.</p>
+    </footer>
+
+    <!-- SCRIPT JS EXTERNO -->
+    <script src="script.js"></script>
+</body>
+</html>
