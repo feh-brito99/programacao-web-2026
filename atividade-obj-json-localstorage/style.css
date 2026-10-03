@@ -1,0 +1,257 @@
+/* CONFIGURAÇÕES GERAIS DA PÁGINA */
+body {
+    background-color: #f0f4f8;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #334155;
+}
+
+/* TÍTULO PRINCIPAL */
+header h1 {
+    color: #475569;
+    font-size: 28px;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+/* CARD DE FORMULÁRIO */
+.cadastro {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 480px;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+/* CAMPOS DE TEXTO E DATA */
+#form-tarefa input[type="text"],
+#form-tarefa textarea,
+#form-tarefa input[type="date"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    background-color: #f8fafc;
+    color: #334155;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+#form-tarefa textarea {
+    height: 75px;
+    resize: none;
+}
+
+#form-tarefa input:focus,
+#form-tarefa textarea:focus {
+    outline: none;
+    border-color: #f472b6;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(244, 114, 182, 0.15);
+}
+
+/* BOTÃO DE CADASTRAR / SALVAR ALTERAÇÃO */
+#btn-submit {
+    width: 100%;
+    background-color: #7dd3fc;
+    color: #0c4a6e;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#btn-submit:hover {
+    background-color: #38bdf8;
+}
+
+/* BOTÃO CANCELAR EDIÇÃO */
+#btn-cancelar {
+    width: 100%;
+    background-color: #f1f5f9;
+    color: #64748b;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: all 0.2s ease;
+}
+
+#btn-cancelar:hover {
+    background-color: #e2e8f0;
+}
+
+/* BOTÃO LIMPAR TUDO */
+#btn-limpar {
+    width: 100%;
+    background-color: transparent;
+    color: #94a3b8;
+    border: 1.5px dashed #cbd5e1;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+}
+
+#btn-limpar:hover {
+    background-color: #fff1f2;
+    border-color: #fb7185;
+    color: #e11d48;
+}
+
+/* ÁREA DA LISTA */
+.tarefas {
+    width: 100%;
+    max-width: 480px;
+    margin-top: 25px;
+}
+
+#lista-tarefas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* CARD DE CADA ITEM DA TAREFA */
+#lista-tarefas li {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    border-left: 5px solid #f472b6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.2s ease;
+}
+
+/* ESTILO DA TAREFA CONCLUÍDA */
+#lista-tarefas li.concluida {
+    opacity: 0.6;
+    border-left-color: #86efac; 
+    background-color: #f8fafc;
+}
+
+#lista-tarefas li.concluida strong,
+#lista-tarefas li.concluida small {
+    text-decoration: line-through; 
+}
+
+.info-tarefa {
+    flex: 1;
+}
+
+#lista-tarefas strong {
+    font-size: 15px;
+    color: #1e293b;
+}
+
+#lista-tarefas small {
+    display: block;
+    margin-top: 6px;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* BOTÕES DE AÇÃO (CHECK, LÁPIS E LIXEIRA) */
+.acoes-tarefa {
+    display: flex;
+    gap: 6px;
+}
+
+.btn-acao {
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+/* Botão Concluir */
+.btn-check {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+.btn-check:hover {
+    background-color: #bbf7d0;
+}
+
+/* Botão Editar */
+.btn-editar {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+.btn-editar:hover {
+    background-color: #bae6fd;
+}
+
+/* Botão Apagar */
+.btn-apagar {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+.btn-apagar:hover {
+    background-color: #fecaca;
+}
+
+/* BOTÃO SECUNDÁRIO (LIMPAR TUDO / CANCELAR EDIÇÃO) */
+#btn-secundario {
+    width: 100%;
+    background-color: transparent;
+    color: #94a3b8;
+    border: 1.5px dashed #cbd5e1;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+}
+
+#btn-secundario:hover {
+    background-color: #fff1f2;
+    border-color: #fb7185;
+
+    color: #e11d48;
+}
+
+/* Estilo do botão secundário quando vira "Cancelar Edição" */
+#btn-secundario.cancelar {
+    background-color: #f1f5f9;
+    border: 1.5px solid #cbd5e1;
+    color: #475569;
+}
+
+#btn-secundario.cancelar:hover {
+    background-color: #e2e8f0;
+    color: #1e293b;
+}
